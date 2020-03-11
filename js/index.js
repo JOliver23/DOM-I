@@ -50,7 +50,7 @@ navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
 navLinks.forEach(element => {
-  element.style.color = 'green';
+  element.style.color = '#67e073';
 })
 
 let headerTitle = document.querySelector("h1");
@@ -70,8 +70,6 @@ subHead[3].textContent = siteContent["main-content"]["product-h4"];
 subHead[4].textContent = siteContent["main-content"]["vision-h4"];
 subHead[5].textContent = siteContent["contact"]["contact-h4"];
 
-
-
 let subInfo = document.getElementsByTagName("p");
 subInfo[0].textContent = siteContent["main-content"]["features-content"];
 subInfo[1].textContent = siteContent["main-content"]["about-content"];
@@ -86,15 +84,19 @@ subInfo[8].textContent = siteContent["footer"]["copyright"];
 let mainImg = document.getElementById("middle-img");
 mainImg.src = siteContent["main-content"]["middle-img-src"];
 
+
 const newLinkEnd = document.createElement('a');
 newLinkEnd.textContent = "Ideas";
-newLinkEnd.style.color = "green";
+newLinkEnd.style.color = "#67e073";
 
 const newLinkStart = document.createElement('a');
 newLinkStart.textContent = "Great";
-newLinkStart.style.color = "green";
+newLinkStart.style.color = "#67e073";
 
 const nav = document.querySelector('nav');
 nav.appendChild(newLinkEnd);
 nav.prepend(newLinkStart);
 
+const middle = document.querySelector(".main-content");
+middle.style.backgroundColor = "#67e073";
+middle.style.color = "white";
