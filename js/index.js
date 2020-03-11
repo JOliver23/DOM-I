@@ -48,3 +48,33 @@ navLinks[2].textContent = siteContent["nav"]["nav-item-3"];
 navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
+
+let headerTitle = document.querySelector("h1");
+headerTitle.textContent = siteContent["cta"]["h1"]; 
+
+let getStarted = document.querySelector("button");
+getStarted.textContent = siteContent["cta"]["button"];
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let subHead = document.getElementsByTagName("h4");
+subHead[0].textContent = siteContent["main-content"]["features-h4"];
+subHead[1].textContent = siteContent["main-content"]["about-h4"];
+subHead[2].textContent = siteContent["main-content"]["services-h4"];
+subHead[3].textContent = siteContent["main-content"]["product-h4"];
+subHead[4].textContent = siteContent["main-content"]["vision-h4"];
+subHead[5].textContent = siteContent["contact"]["contact-h4"];
+
+let subInfo = document.getElementsByTagName("p");
+subInfo[0].textContent = siteContent["main-content"]["features-content"];
+subInfo[1].textContent = siteContent["main-content"]["about-content"];
+subInfo[2].textContent = siteContent["main-content"]["services-content"];
+subInfo[3].textContent = siteContent["main-content"]["product-content"];
+subInfo[4].textContent = siteContent["main-content"]["vision-content"];
+subInfo[5].textContent = siteContent["contact"] ["address"];
+subInfo[6].textContent = siteContent["contact"] ["phone"];
+subInfo[7].textContent = siteContent["contact"] ["email"];
+subInfo[8].textContent = siteContent["footer"]["copyright"];
+let mainImg = document.getElementById("middle-img");
+mainImg.src = siteContent["main-content"]["middle-img-src"];
