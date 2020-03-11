@@ -58,6 +58,8 @@ headerTitle.textContent = siteContent["cta"]["h1"];
 
 let getStarted = document.querySelector("button");
 getStarted.textContent = siteContent["cta"]["button"];
+getStarted.style.backgroundColor = "dodgerblue";
+getStarted.style.borderRadius = "100%";
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -100,3 +102,11 @@ nav.prepend(newLinkStart);
 const middle = document.querySelector(".main-content");
 middle.style.backgroundColor = "#67e073";
 middle.style.color = "white";
+middle.style.marginBottom = "0";
+
+const bottom = document.querySelector(".contact");
+bottom.style.backgroundColor = "dodgerblue";
+bottom.style.color = "white";
+bottom.style.marginTop = "0";
+bottom.style.height = "15rem";
+bottom.style.paddingTop = "4rem";
